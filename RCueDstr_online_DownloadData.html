@@ -680,7 +680,7 @@ function drawButton(text,state,posx,posy,sx,sy,adjx,adjy) {
 function drawAge(age,posx,posy) {
    ctx.fillStyle='#757575'; ctx.fillRect(posx, posy, 300, 4);
    ctx.fillStyle='#ffffff'; ctx.fillRect(ageXPos, posy-4, 4, 12);
-   if ((mousePosX < posx+300) && (mousePosX > posx) && (mousePosY > posy-8) && (mousePosY < posy+8) && mouseButton == 0){ageXPos = mousePosX; age = Math.floor(18+(ageXPos-posx)*43/300); mouseButton = -1;}
+   if ((mousePosX < posx+300) && (mousePosX > posx) && (mousePosY > posy-8) && (mousePosY < posy+8) && mouseButton == 0){ageXPos = mousePosX; age = Math.floor(18+(ageXPos-posx)*40/300); mouseButton = -1;}
    return(age);
 }
 
