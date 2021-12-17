@@ -403,7 +403,7 @@ function blockEnd() {
     ctx.fillText(feedback3, 40, 300); 
   } else if (blockNum == number_of_blocks){
     ctx.fillStyle = "red";
-    feedback3 = "IMPORTANT! Click on the white circle to upload your data."
+    feedback3 = "IMPORTANT! Click on the white circle to download and send your data to the researcher. Otherwise you cannot get paid."
     ctx.fillText(feedback3, 40, 300); 
   }
   
@@ -852,7 +852,7 @@ function writeStuff() {
   desText.appendChild(addString); document.body.appendChild(desText);   
 
   desText = document.createElement("p");
-  addString = document.createTextNode("Please download the below link and submit it to the researchers (yz5725@nyu.edu) to get your credit/allowance."); // add link/email address? depends how the participant was recruited
+  addString = document.createTextNode("Please download the below link (right clik!) and submit it to the researchers (yz5725@nyu.edu) to get your credit/allowance."); // add link/email address? depends how the participant was recruited
   desText.appendChild(addString); document.body.appendChild(desText); 
 
     var textField = document.createElement("TEXTAREA"); 
